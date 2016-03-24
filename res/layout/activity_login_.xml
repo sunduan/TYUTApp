@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 亮黄 -->
+    <!-- android:background="#F3D027" -->
+    <!-- 青色 -->
+    <!-- android:background="#21A957" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" 
+        >
+    </RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+             ></RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1.5" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"            
+                android:src="@drawable/myqqtouxiang" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.5" >
+
+            <EditText
+                
+                android:id="@+id/uId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:inputType="textPersonName" 
+                android:hint="学号"
+                android:text="2012005003"
+                
+                >
+
+                <requestFocus />
+            </EditText>
+          
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+          
+            android:layout_weight="0.5" >
+
+            <EditText
+                
+                android:id="@+id/passWd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:text="142727199408286017"
+                 />
+          
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.3" 
+            android:orientation="horizontal"
+            >
+			<RelativeLayout 
+			    android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" ></RelativeLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="8"
+                android:background="#21A957"
+                android:text="Login"
+                android:typeface="monospace" />
+
+          <RelativeLayout 
+			    android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" ></RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+             ></RelativeLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+    </RelativeLayout>
+
+</LinearLayout>
