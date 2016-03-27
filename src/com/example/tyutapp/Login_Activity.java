@@ -58,7 +58,7 @@ public class Login_Activity extends Activity {
 								.getText().toString()));
 						String loginstatus = connectTYUT.getByPost("http://"
 								+ Tmp.getServerIp()
-								+ ":8080/TyutAppService/login.action", params);
+								+ "/login.action", params);
 						if (loginstatus != "") {
 							JSONObject jsonObject = null;
 							int id=0;

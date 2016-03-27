@@ -2,7 +2,7 @@ package TYUT.tmp;
 
 public class Tmp {
 private static String cookies="";
-private static String serverIp="192.168.200.155";
+private static String serverIp="tyutappservice.mybluemix.net";
 public static String getServerIp() {
 	return serverIp;
 }
