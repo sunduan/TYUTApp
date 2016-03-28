@@ -11,36 +11,53 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int myqqtouxiang=0x7f020001;
-        public static final int user=0x7f020002;
+        public static final int background1=0x7f020000;
+        public static final int clr_normal=0x7f020013;
+        public static final int clr_normal_error=0x7f020015;
+        public static final int clr_pressed=0x7f020014;
+        public static final int clr_pressed_error=0x7f020016;
+        public static final int fanganchengji=0x7f020001;
+        public static final int gerenguanli=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int jiaoxuepinggu=0x7f020004;
+        public static final int kaoshiguanli=0x7f020005;
+        public static final int kechengchaxun=0x7f020006;
+        public static final int login_back=0x7f020007;
+        public static final int login_back1=0x7f020008;
+        public static final int login_back2=0x7f020009;
+        public static final int login_box=0x7f02000a;
+        public static final int login_button_selector=0x7f02000b;
+        public static final int myqqtouxiang=0x7f02000c;
+        public static final int peiyangfangan=0x7f02000d;
+        public static final int qqtouxiang_gb=0x7f02000e;
+        public static final int shape=0x7f02000f;
+        public static final int shape_error=0x7f020010;
+        public static final int user=0x7f020011;
+        public static final int zhuti=0x7f020012;
     }
     public static final class id {
-        public static final int bs_mainpage=0x7f060005;
-        public static final int button1=0x7f060007;
-        public static final int cl=0x7f060006;
-        public static final int editText1=0x7f060008;
+        public static final int LinearLayout=0x7f060005;
         public static final int imageView1=0x7f060000;
         public static final int login=0x7f060003;
         public static final int passWd=0x7f060002;
+        public static final int progressBar=0x7f060006;
         public static final int slide_menu=0x7f060004;
-        public static final int text1=0x7f06000a;
-        public static final int text2=0x7f06000b;
-        public static final int text3=0x7f06000c;
-        public static final int textView1=0x7f060009;
+        public static final int tv=0x7f060007;
         public static final int uId=0x7f060001;
-        public static final int wwtj=0x7f06000d;
     }
     public static final class layout {
-        public static final int activity_login_=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int bs_main=0x7f030002;
-        public static final int layout_menu=0x7f030003;
-        public static final int main=0x7f030004;
+        public static final int activity_index=0x7f030000;
+        public static final int activity_login_=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int bs_main=0x7f030003;
+        public static final int dialog_loading=0x7f030004;
+        public static final int layout_menu=0x7f030005;
+        public static final int main=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
+        public static final int title_activity_index=0x7f040003;
         public static final int title_activity_login_=0x7f040002;
     }
     public static final class style {

@@ -55,7 +55,7 @@ public class SlidingMenu extends HorizontalScrollView
 		mScreenWidth=outMetrics.widthPixels;
 		Log.i("屏款",mScreenWidth+"");
 		//dp转px
-		mMenuRightPadding=mScreenWidth/3;
+		mMenuRightPadding=mScreenWidth/5;
 		
 	}
 	 @Override  
@@ -97,18 +97,27 @@ public class SlidingMenu extends HorizontalScrollView
 			ViewGroup menu = (ViewGroup) wrapper.getChildAt(0);
 			ViewGroup content = (ViewGroup) wrapper.getChildAt(1);
 
-			mMenuWidth = mScreenWidth - mMenuRightPadding;
+			mMenuWidth = mScreenWidth - mMenuRightPadding*2;
 			//mHalfMenuWidth = mMenuWidth / 10;
-			menu.getLayoutParams().width = mMenuWidth;
-			content.getLayoutParams().width = mScreenWidth;
+			android.widget.LinearLayout.LayoutParams menulay=(android.widget.LinearLayout.LayoutParams) menu.getLayoutParams();
+			menulay.width = mMenuWidth;
+			android.widget.LinearLayout.LayoutParams contentlay=(android.widget.LinearLayout.LayoutParams) content.getLayoutParams();
+			contentlay.width = mScreenWidth;
 			
-			menu.setLayoutParams(menu.getLayoutParams());
-			content.setLayoutParams(content.getLayoutParams());
+			menu.setLayoutParams(menulay);
+			content.setLayoutParams(contentlay);
 			
-			wrapper.getLayoutParams().width=mMenuWidth+mScreenWidth;
 			
-			wrapper.setLayoutParams(wrapper.getLayoutParams());
+			/*ViewGroup.LayoutParams wrapperlay= (ViewGroup.LayoutParams) wrapper.getLayoutParams();
+			wrapperlay.width=0;
+			
+			wrapper.setLayoutParams(wrapperlay);
+			
+			ViewGroup.LayoutParams slidlay=(ViewGroup.LayoutParams)this.getLayoutParams();
+			slidlay.width=mScreenWidth;
+			this.setLayoutParams(slidlay);*/
 			once = true;
+			
 		}
 		
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);

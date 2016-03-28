@@ -5,4 +5,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_login_">Login_Activity</string>
 
+    <drawable name="clr_normal">#21A957</drawable>
+    <drawable name="clr_pressed">#219557</drawable>
+    <drawable name="clr_normal_error">#ff0033</drawable>
+    <drawable name="clr_pressed_error">#dd0033</drawable>
+
+    <string name="title_activity_index">IndexActivity</string>
+
 </resources>
