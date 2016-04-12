@@ -3,42 +3,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal" >
-<LinearLayout 
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_weight="10"
-    android:orientation="vertical"
-    >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ff313131"
-        android:gravity="center_vertical"
-        android:paddingLeft="15.0dip"
-        android:text="分类"
-        android:textColor="#00ff00"
-        android:textSize="14.0sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50.0dip"
-        
-        android:clickable="true"
-        android:drawableLeft="#ff0000"
-        android:drawablePadding="1.0dip"
-        android:gravity="center_vertical"
-        android:paddingLeft="15.0dip"
-        android:paddingRight="10.0dip"
-        android:text="侧边栏选项－1"
-        android:textColor="#00ff00"
-        android:textSize="16.0sp" />
+    <!-- android:background="#6292E4" -->
 
-    <!-- <View
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:text="分类"
+            android:textColor="#00ff00"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:clickable="true"
+            android:drawableLeft="#ff0000"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="侧边栏选项－1"
+            android:textColor="#00ff00"
+            android:textSize="16.0sp" />
+
+        <!--
+         <View
         android:layout_width="240dip"
         android:layout_height="2.0dip"
-        android:background="@drawable/ic_shelf_category_divider" /> -->
+        android:background="@drawable/ic_shelf_category_divider" />
+        -->
 
-  <!--   <TextView
+
+        <!--
+    <TextView
         android:layout_width="240dip"
         android:layout_height="50.0dip"
         android:background="@drawable/selector_category_item"
@@ -69,17 +74,24 @@
         android:paddingRight="10.0dip"
         android:text="侧边栏选项－3"
         android:textColor="#ff959595"
-        android:textSize="16.0sp" /> -->
+        android:textSize="16.0sp" />
+        -->
 
-    <!-- <View
+
+        <!--
+         <View
         android:layout_width="240dip"
         android:layout_height="2.0dip"
-        android:background="@drawable/ic_shelf_category_divider" /> -->
-</LinearLayout>
+        android:background="@drawable/ic_shelf_category_divider" />
+        -->
+    </LinearLayout>
 
-<LinearLayout 
+    <!--
+     <LinearLayout 
     android:layout_width="0dp"
     android:layout_height="match_parent"
     android:layout_weight="1"
     ></LinearLayout>
+    -->
+
 </LinearLayout>

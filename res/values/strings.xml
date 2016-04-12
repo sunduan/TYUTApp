@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TYUTApp</string>
+    <string name="app_name">太原理工大学教务处</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_login_">Login_Activity</string>
 
@@ -9,6 +9,19 @@
     <drawable name="clr_pressed">#219557</drawable>
     <drawable name="clr_normal_error">#ff0033</drawable>
     <drawable name="clr_pressed_error">#dd0033</drawable>
+    <!-- 方案成绩 -->
+    <drawable name="fanganchengji_normal">#ad82dd</drawable>
+    <!-- 课程查询 -->
+    <drawable name="kechengchaxun_normal">#66CC00</drawable>
+
+    <!-- 培养方案 -->
+    <drawable name="peiyangfangan_normal">#cc0000</drawable>
+    <!-- 考试管理 -->
+    <drawable name="kaoshiguanli_normal">#6292E4</drawable>
+    <!-- 教学评估 -->
+    <drawable name="jiaoxuepinggu_normal">#AAC5F0</drawable>
+    <!-- 个人管理 -->
+    <drawable name="gerenguanli_normal">#FF870F</drawable>
 
     <string name="title_activity_index">IndexActivity</string>
 

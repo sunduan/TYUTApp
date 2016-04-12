@@ -12,28 +12,53 @@ public final class R {
     }
     public static final class drawable {
         public static final int background1=0x7f020000;
-        public static final int clr_normal=0x7f020013;
-        public static final int clr_normal_error=0x7f020015;
-        public static final int clr_pressed=0x7f020014;
-        public static final int clr_pressed_error=0x7f020016;
+        public static final int clr_normal=0x7f02001a;
+        public static final int clr_normal_error=0x7f02001c;
+        public static final int clr_pressed=0x7f02001b;
+        public static final int clr_pressed_error=0x7f02001d;
         public static final int fanganchengji=0x7f020001;
-        public static final int gerenguanli=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int jiaoxuepinggu=0x7f020004;
-        public static final int kaoshiguanli=0x7f020005;
-        public static final int kechengchaxun=0x7f020006;
-        public static final int login_back=0x7f020007;
-        public static final int login_back1=0x7f020008;
-        public static final int login_back2=0x7f020009;
-        public static final int login_box=0x7f02000a;
-        public static final int login_button_selector=0x7f02000b;
-        public static final int myqqtouxiang=0x7f02000c;
-        public static final int peiyangfangan=0x7f02000d;
-        public static final int qqtouxiang_gb=0x7f02000e;
-        public static final int shape=0x7f02000f;
-        public static final int shape_error=0x7f020010;
-        public static final int user=0x7f020011;
-        public static final int zhuti=0x7f020012;
+        /**  方案成绩 
+         */
+        public static final int fanganchengji_normal=0x7f02001e;
+        public static final int fanganchengji_selector=0x7f020002;
+        public static final int gerenguanli=0x7f020003;
+        /**  个人管理 
+         */
+        public static final int gerenguanli_normal=0x7f020023;
+        public static final int gerenguanli_selector=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int jiaoxuepinggu=0x7f020006;
+        /**  教学评估 
+         */
+        public static final int jiaoxuepinggu_normal=0x7f020022;
+        public static final int jiaoxuepinggu_selector=0x7f020007;
+        public static final int kaoshiguanli=0x7f020008;
+        /**  考试管理 
+         */
+        public static final int kaoshiguanli_normal=0x7f020021;
+        public static final int kaoshiguanli_selector=0x7f020009;
+        public static final int kechengchaxun=0x7f02000a;
+        /**  课程查询 
+         */
+        public static final int kechengchaxun_normal=0x7f02001f;
+        public static final int kechengchaxun_selector=0x7f02000b;
+        public static final int login_back=0x7f02000c;
+        public static final int login_back1=0x7f02000d;
+        public static final int login_back2=0x7f02000e;
+        public static final int login_box=0x7f02000f;
+        public static final int login_button_selector=0x7f020010;
+        public static final int logo=0x7f020011;
+        public static final int myqqtouxiang=0x7f020012;
+        public static final int peiyangfangan=0x7f020013;
+        /**  培养方案 
+         */
+        public static final int peiyangfangan_normal=0x7f020020;
+        public static final int peiyangfangan_selector=0x7f020014;
+        public static final int qqtouxiang_gb=0x7f020015;
+        public static final int shape=0x7f020016;
+        public static final int shape_error=0x7f020017;
+        public static final int user=0x7f020018;
+        public static final int zhuti=0x7f020019;
     }
     public static final class id {
         public static final int LinearLayout=0x7f060005;

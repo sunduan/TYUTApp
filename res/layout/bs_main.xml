@@ -2,27 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:background="#ffffff"
-    android:orientation="vertical" 
-    >
-     
-<TYUT.cuslayout.SlidingMenu
-        android:id="@+id/slide_menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" 
-        android:background="@drawable/zhuti"
-        android:scrollbars="none">
-<LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:orientation="horizontal" 
+    android:background="@drawable/fanganchengji_selector"
+    android:orientation="vertical" >
 
-        >
+    <TYUT.cuslayout.SlidingMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         
-        <include layout="@layout/layout_menu" />
-        
-        <include layout="@layout/main" />
-       
-    </LinearLayout>
-</TYUT.cuslayout.SlidingMenu>
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/layout_menu" />
+
+            <include layout="@layout/main" />
+        </LinearLayout>
+    </TYUT.cuslayout.SlidingMenu>
+
 </LinearLayout>

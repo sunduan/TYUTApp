@@ -2,6 +2,7 @@ package TYUT.cuslayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.support.v4.hardware.display.DisplayManagerCompat;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
@@ -56,7 +57,7 @@ public class SlidingMenu extends HorizontalScrollView
 		Log.i("屏款",mScreenWidth+"");
 		//dp转px
 		mMenuRightPadding=mScreenWidth/5;
-		
+		Log.i(mScreenWidth+"宽度", mScreenWidth+"");
 	}
 	 @Override  
 	    protected void onScrollChanged(int l, int t, int oldl, int oldt)  
@@ -107,15 +108,19 @@ public class SlidingMenu extends HorizontalScrollView
 			menu.setLayoutParams(menulay);
 			content.setLayoutParams(contentlay);
 			
-			
+			//滑動
 			/*ViewGroup.LayoutParams wrapperlay= (ViewGroup.LayoutParams) wrapper.getLayoutParams();
-			wrapperlay.width=0;
+			Log.i("线性宽度", ""+wrapperlay.width);
+			wrapperlay.width=700;
+			Log.i("线性宽度1", ""+wrapperlay.width);
+			wrapper.setLayoutParams(wrapperlay);*/
 			
-			wrapper.setLayoutParams(wrapperlay);
-			
-			ViewGroup.LayoutParams slidlay=(ViewGroup.LayoutParams)this.getLayoutParams();
+			/*ViewGroup.LayoutParams slidlay=(ViewGroup.LayoutParams)this.getLayoutParams();
 			slidlay.width=mScreenWidth;
 			this.setLayoutParams(slidlay);*/
+			
+			
+			
 			once = true;
 			
 		}
@@ -147,7 +152,10 @@ public class SlidingMenu extends HorizontalScrollView
 		case MotionEvent.ACTION_UP:
 			
 			int scrollX = getScrollX();
+			
+			//Log.i("线性宽度", ""+((LinearLayout) getChildAt(0)).getLayoutParams().width);
 			Log.i("滑到",scrollX+"");
+			
 			if (scrollX< mMenuWidth/5*4&&!isOpen)
 			{
 				
