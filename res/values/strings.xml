@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">太原理工大学教务处</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_login_">Login_Activity</string>
 
@@ -23,6 +22,10 @@
     <!-- 个人管理 -->
     <drawable name="gerenguanli_normal">#FF870F</drawable>
 
+    <!-- 标题栏名称 -->
+    <string name="app_name">太原理工大学教务处</string>
+    <string name="facj_lablel">方案成绩</string>
     <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_fanganchengji_func">Fanganchengji_funcActivity</string>
 
 </resources>

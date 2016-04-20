@@ -62,7 +62,10 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout=0x7f060005;
+        public static final int facjlist=0x7f060008;
+        public static final int fanganchengji_func=0x7f060009;
         public static final int imageView1=0x7f060000;
+        public static final int items=0x7f06000a;
         public static final int login=0x7f060003;
         public static final int passWd=0x7f060002;
         public static final int progressBar=0x7f060006;
@@ -71,19 +74,25 @@ public final class R {
         public static final int uId=0x7f060001;
     }
     public static final class layout {
-        public static final int activity_index=0x7f030000;
-        public static final int activity_login_=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int bs_main=0x7f030003;
-        public static final int dialog_loading=0x7f030004;
-        public static final int layout_menu=0x7f030005;
-        public static final int main=0x7f030006;
+        public static final int activity_func=0x7f030000;
+        public static final int activity_index=0x7f030001;
+        public static final int activity_login_=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int bs_main=0x7f030004;
+        public static final int dialog_loading=0x7f030005;
+        public static final int layout_menu=0x7f030006;
+        public static final int main=0x7f030007;
+        public static final int parent_item=0x7f030008;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040001;
-        public static final int title_activity_index=0x7f040003;
-        public static final int title_activity_login_=0x7f040002;
+        /**  标题栏名称 
+         */
+        public static final int app_name=0x7f040002;
+        public static final int facj_lablel=0x7f040003;
+        public static final int hello_world=0x7f040000;
+        public static final int title_activity_fanganchengji_func=0x7f040005;
+        public static final int title_activity_index=0x7f040004;
+        public static final int title_activity_login_=0x7f040001;
     }
     public static final class style {
         /** 

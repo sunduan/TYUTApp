@@ -2,14 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fanganchengji_selector"
     android:orientation="vertical" >
 
     <TYUT.cuslayout.SlidingMenu
         android:id="@+id/slide_menu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        
+        android:background="@drawable/fanganchengji"
         android:scrollbars="none" >
 
         <LinearLayout
@@ -19,7 +18,7 @@
 
             <include layout="@layout/layout_menu" />
 
-            <include layout="@layout/main" />
+            <include layout="@layout/activity_func" />
         </LinearLayout>
     </TYUT.cuslayout.SlidingMenu>
 
