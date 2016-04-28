@@ -1,5 +1,6 @@
 package TYUTservice.data;
 
+
 public class MessageLogin extends MessageTyut {
 	public MessageLogin(int id, int status, String cookie) {
 		super(id, status);
