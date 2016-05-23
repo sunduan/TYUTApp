@@ -22,8 +22,8 @@ public class ConnectTYUT {
 		String response = null;
 		
 		//设置连接网络的参数
-		int timeoutConnection = 3000;  
-		int timeoutSocket = 5000;  
+		int timeoutConnection = 30000;  
+		int timeoutSocket = 50000;  
 		HttpParams httpParameters = new BasicHttpParams();
 	    HttpConnectionParams.setConnectionTimeout(httpParameters, timeoutConnection);
 	    HttpConnectionParams.setSoTimeout(httpParameters, timeoutSocket);  
@@ -36,7 +36,8 @@ public class ConnectTYUT {
 	    Log.i("a","连接中...");
 	    if(params.size()>=0){
 	    	try {
-	    		Log.i("a","连接1....");   		
+	    		Log.i("a","连接1....");   	
+	    		
 				httpPost.setEntity(new UrlEncodedFormEntity(params,HTTP.UTF_8 ));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

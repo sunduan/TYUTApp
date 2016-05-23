@@ -25,6 +25,7 @@
         <!-- android:background="#ad82dd" -->
 
         <Button
+            android:id="@+id/kechengchaxun_func"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -79,6 +80,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/peiyangfangan_func"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -93,6 +95,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/kaoshiguanli_func"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -136,7 +139,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/jiaoxuepinggu_selector"
-            android:text="教学评估"
+            android:text="学籍信息"
             android:textColor="#ffffff" />
 
         <RelativeLayout
@@ -146,6 +149,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/gerenguanli_func"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

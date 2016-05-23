@@ -122,6 +122,8 @@ public class Login_Activity extends Activity {
 							// 登录成功
 							if (status == 3) {
 								Tmp.setCookies(cookie);
+								Tmp.setUsername(uId.getText().toString());
+								Tmp.setPassword(passWd.getText().toString());
 								Intent intent = new Intent(Login_Activity.this,
 										MainActivity.class);
 								// 启动活动

@@ -92,7 +92,7 @@
                         android:ems="10"
                         android:hint="学号"
                         android:inputType="textPersonName"
-                        android:text="2012005003" >
+                        android:text="2013000248" >
 
                         <requestFocus />
                     </EditText>
@@ -155,7 +155,7 @@
 						    android:inputType="textPassword"
 						    android:background="@drawable/shape"
 						    android:hint="密码"
-						    android:text="142727199408286017"
+						    android:text="140622199411120035"
 						     />
 
                     </RelativeLayout>

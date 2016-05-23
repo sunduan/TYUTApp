@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -26,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="#ad82dd"
+                android:background="#cc2200"
                 android:orientation="horizontal" >
 
                 <LinearLayout
@@ -36,38 +35,60 @@
                     android:orientation="vertical" >
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/pyfa_xq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="培养方案完成情况 "
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 
+                android:orientation="horizontal" >
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="0.1"
                     android:orientation="vertical" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:text="课程号"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp" />
-
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/facj_kch"
+                        android:id="@+id/pyfa_wc"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
+                        android:text=""
                         android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:text="中国" />
+                         />
                 </LinearLayout>
 
                 <LinearLayout
@@ -77,7 +98,7 @@
                     android:orientation="vertical" >
                 </LinearLayout>
             </LinearLayout>
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -97,11 +118,12 @@
                     android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+id/pyfa_zxf"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:textColor="#ffffff"
-                        android:text="课序号" />
+                        android:text="学期要求最低学分" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -112,7 +134,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/facj_kxh"
+                        android:id="@+id/pyfa_wed"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -127,7 +149,7 @@
                     android:orientation="vertical" >
                 </LinearLayout>
             </LinearLayout>
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -147,11 +169,12 @@
                     android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+id/pyfa_zxs"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:textColor="#ffffff"
-                        android:text="课程名" />
+                        android:text="已修读学分" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -162,7 +185,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/facj_kcm"
+                        android:id="@+id/pyfa_thu"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -177,7 +200,7 @@
                     android:orientation="vertical" >
                 </LinearLayout>
             </LinearLayout>
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -197,11 +220,12 @@
                     android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+id/pyfa_zms"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:textColor="#ffffff"
-                        android:text="英文课程名" />
+                        android:text="已修学时" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -212,7 +236,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/facj_ywkcm"
+                        android:id="@+id/pyfa_fri"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -227,7 +251,7 @@
                     android:orientation="vertical" >
                 </LinearLayout>
             </LinearLayout>
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -247,11 +271,12 @@
                     android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+id/pyfa_yms"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:textColor="#ffffff"
-                        android:text="学分" />
+                        android:text="已通过门数" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -262,7 +287,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/facj_xf"
+                        android:id="@+id/pyfa_sat"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -277,7 +302,7 @@
                     android:orientation="vertical" >
                 </LinearLayout>
             </LinearLayout>
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -297,11 +322,12 @@
                     android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+id/pyfa_wms"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:textColor="#ffffff"
-                        android:text="课程属性" />
+                        android:text="未通过门数" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -312,107 +338,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/facj_kcsx"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:textColor="#ffffff"
-                        android:text="中国" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="vertical" >
-                </LinearLayout>
-            </LinearLayout>
-             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="vertical" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:textColor="#ffffff"
-                        android:text="成绩" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:orientation="vertical" >
-
-                    <TextView
-                        android:id="@+id/facj_cj"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:textColor="#ffffff"
-                        android:text="中国" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="vertical" >
-                </LinearLayout>
-            </LinearLayout>
-             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="vertical" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:textColor="#ffffff"
-                        android:text="未通过原因" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:orientation="vertical" >
-
-                    <TextView
-                        android:id="@+id/facj_wtgyy"
+                        android:id="@+id/pyfa_sun"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"

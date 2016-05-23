@@ -27,5 +27,9 @@
     <string name="facj_lablel">方案成绩</string>
     <string name="title_activity_index">IndexActivity</string>
     <string name="title_activity_fanganchengji_func">Fanganchengji_funcActivity</string>
+    <string name="title_activity_kccx">课程查询</string>
+    <string name="title_activity_pyfa_">培养方案</string>
+    <string name="title_activity_grgl">个人管理</string>
+    <string name="title_activity_ksgl">考试管理</string>
 
 </resources>

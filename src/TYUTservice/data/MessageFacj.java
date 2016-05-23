@@ -2,6 +2,8 @@ package TYUTservice.data;
 
 import java.util.List;
 
+import TYUTservice.data.msgdata.FacjMsg;
+
 public class MessageFacj extends MessageTyut {
 
 	private List<FacjMsg> facjMsgs;
