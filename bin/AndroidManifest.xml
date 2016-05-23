@@ -29,6 +29,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
         </activity>
         <activity
             android:name=".Facj_Activity"
@@ -45,10 +46,12 @@
         <activity
             android:name=".GrglActivity"
             android:label="@string/title_activity_grgl" >
+            
         </activity>
         <activity
             android:name=".KsglActivity"
             android:label="@string/title_activity_ksgl" >
+            
         </activity>
     </application>
 
