@@ -10,6 +10,17 @@ package com.example.tyutapp;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int actionBarBg=0x7f040002;
+        public static final int actionBarText=0x7f040003;
+        public static final int classIndex=0x7f040000;
+        public static final int courseTextColor=0x7f040001;
+    }
+    public static final class dimen {
+        public static final int weekItemHeight=0x7f050000;
+        public static final int weekItemMarLeft=0x7f050002;
+        public static final int weekItemMarTop=0x7f050001;
+    }
     public static final class drawable {
         public static final int background1=0x7f020000;
         public static final int clr_normal=0x7f02001a;
@@ -61,85 +72,98 @@ public final class R {
         public static final int zhuti=0x7f020019;
     }
     public static final class id {
-        public static final int LinearLayout=0x7f06000d;
-        public static final int bexit=0x7f060007;
-        public static final int facj_cj=0x7f060016;
-        public static final int facj_kch=0x7f060010;
-        public static final int facj_kcm=0x7f060012;
-        public static final int facj_kcsx=0x7f060015;
-        public static final int facj_kxh=0x7f060011;
-        public static final int facj_wtgyy=0x7f060017;
-        public static final int facj_xf=0x7f060014;
-        public static final int facj_ywkcm=0x7f060013;
-        public static final int facjlist=0x7f06001e;
-        public static final int fanganchengji_func=0x7f060020;
-        public static final int gerenguanli_func=0x7f060023;
-        public static final int grgl_address=0x7f060005;
-        public static final int grgl_email=0x7f060006;
-        public static final int grgl_name=0x7f060002;
-        public static final int grgl_tel=0x7f060004;
-        public static final int grgl_userper=0x7f060003;
-        public static final int imageView1=0x7f060008;
-        public static final int items=0x7f060024;
-        public static final int kaoshiguanli_func=0x7f060022;
-        public static final int kccx_cfive=0x7f06001d;
-        public static final int kccx_cfour=0x7f06001c;
-        public static final int kccx_cone=0x7f060019;
-        public static final int kccx_cthree=0x7f06001b;
-        public static final int kccx_ctwo=0x7f06001a;
-        public static final int kccx_week=0x7f060018;
-        public static final int kechengchaxun_func=0x7f06001f;
-        public static final int login=0x7f06000b;
-        public static final int main_background=0x7f060000;
-        public static final int main_listview=0x7f060001;
-        public static final int passWd=0x7f06000a;
-        public static final int peiyangfangan_func=0x7f060021;
-        public static final int progressBar=0x7f06000e;
-        public static final int pyfa_fri=0x7f06002c;
-        public static final int pyfa_sat=0x7f06002e;
-        public static final int pyfa_sun=0x7f060030;
-        public static final int pyfa_thu=0x7f06002a;
-        public static final int pyfa_wc=0x7f060026;
-        public static final int pyfa_wed=0x7f060028;
-        public static final int pyfa_wms=0x7f06002f;
-        public static final int pyfa_xq=0x7f060025;
-        public static final int pyfa_yms=0x7f06002d;
-        public static final int pyfa_zms=0x7f06002b;
-        public static final int pyfa_zxf=0x7f060027;
-        public static final int pyfa_zxs=0x7f060029;
-        public static final int slide_menu=0x7f06000c;
-        public static final int tv=0x7f06000f;
-        public static final int uId=0x7f060009;
+        public static final int LinearLayout=0x7f080019;
+        public static final int bexit=0x7f080007;
+        public static final int contentPanel=0x7f08000b;
+        public static final int facj_cj=0x7f080022;
+        public static final int facj_kch=0x7f08001c;
+        public static final int facj_kcm=0x7f08001e;
+        public static final int facj_kcsx=0x7f080021;
+        public static final int facj_kxh=0x7f08001d;
+        public static final int facj_wtgyy=0x7f080023;
+        public static final int facj_xf=0x7f080020;
+        public static final int facj_ywkcm=0x7f08001f;
+        public static final int facjlist=0x7f08002a;
+        public static final int fanganchengji_func=0x7f08002c;
+        public static final int gerenguanli_func=0x7f08002f;
+        public static final int grgl_address=0x7f080005;
+        public static final int grgl_email=0x7f080006;
+        public static final int grgl_name=0x7f080002;
+        public static final int grgl_tel=0x7f080004;
+        public static final int grgl_userper=0x7f080003;
+        public static final int imageView1=0x7f080014;
+        public static final int items=0x7f080030;
+        public static final int kaoshiguanli_func=0x7f08002e;
+        public static final int kccx_cfive=0x7f080029;
+        public static final int kccx_cfour=0x7f080028;
+        public static final int kccx_cone=0x7f080025;
+        public static final int kccx_cthree=0x7f080027;
+        public static final int kccx_ctwo=0x7f080026;
+        public static final int kccx_week=0x7f080024;
+        public static final int kechengchaxun_func=0x7f08002b;
+        public static final int login=0x7f080017;
+        public static final int main_background=0x7f080000;
+        public static final int main_listview=0x7f080001;
+        public static final int passWd=0x7f080016;
+        public static final int peiyangfangan_func=0x7f08002d;
+        public static final int progressBar=0x7f08001a;
+        public static final int pyfa_fri=0x7f080038;
+        public static final int pyfa_sat=0x7f08003a;
+        public static final int pyfa_sun=0x7f08003c;
+        public static final int pyfa_thu=0x7f080036;
+        public static final int pyfa_wc=0x7f080032;
+        public static final int pyfa_wed=0x7f080034;
+        public static final int pyfa_wms=0x7f08003b;
+        public static final int pyfa_xq=0x7f080031;
+        public static final int pyfa_yms=0x7f080039;
+        public static final int pyfa_zms=0x7f080037;
+        public static final int pyfa_zxf=0x7f080033;
+        public static final int pyfa_zxs=0x7f080035;
+        public static final int scrollPanel=0x7f08000a;
+        public static final int slide_menu=0x7f080018;
+        public static final int title=0x7f080008;
+        public static final int tv=0x7f08001b;
+        public static final int uId=0x7f080015;
+        public static final int weekName=0x7f080009;
+        public static final int weekPanel_0=0x7f08000c;
+        public static final int weekPanel_1=0x7f08000d;
+        public static final int weekPanel_2=0x7f08000e;
+        public static final int weekPanel_3=0x7f08000f;
+        public static final int weekPanel_4=0x7f080010;
+        public static final int weekPanel_5=0x7f080011;
+        public static final int weekPanel_6=0x7f080012;
+        public static final int weekPanel_7=0x7f080013;
     }
     public static final class layout {
         public static final int activity_func=0x7f030000;
         public static final int activity_grgl=0x7f030001;
         public static final int activity_index=0x7f030002;
-        public static final int activity_ksgl=0x7f030003;
-        public static final int activity_login_=0x7f030004;
-        public static final int activity_main=0x7f030005;
-        public static final int bs_main=0x7f030006;
-        public static final int dialog_loading=0x7f030007;
-        public static final int facj_item=0x7f030008;
-        public static final int kccx_item=0x7f030009;
-        public static final int layout_menu=0x7f03000a;
-        public static final int main=0x7f03000b;
-        public static final int parent_item=0x7f03000c;
-        public static final int pyfa_item=0x7f03000d;
+        public static final int activity_kcb=0x7f030003;
+        public static final int activity_ksgl=0x7f030004;
+        public static final int activity_login_=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int bs_main=0x7f030007;
+        public static final int dialog_loading=0x7f030008;
+        public static final int facj_item=0x7f030009;
+        public static final int kccx_item=0x7f03000a;
+        public static final int layout_menu=0x7f03000b;
+        public static final int main=0x7f03000c;
+        public static final int parent_item=0x7f03000d;
+        public static final int pyfa_item=0x7f03000e;
     }
     public static final class string {
         /**  标题栏名称 
          */
-        public static final int app_name=0x7f040002;
-        public static final int facj_lablel=0x7f040003;
-        public static final int hello_world=0x7f040000;
-        public static final int title_activity_fanganchengji_func=0x7f040005;
-        public static final int title_activity_grgl=0x7f040008;
-        public static final int title_activity_index=0x7f040004;
-        public static final int title_activity_kccx=0x7f040006;
-        public static final int title_activity_ksgl=0x7f040009;
-        public static final int title_activity_login_=0x7f040001;
-        public static final int title_activity_pyfa_=0x7f040007;
+        public static final int app_name=0x7f060002;
+        public static final int facj_lablel=0x7f060003;
+        public static final int hello_world=0x7f060000;
+        public static final int title_activity_fanganchengji_func=0x7f060005;
+        public static final int title_activity_grgl=0x7f060008;
+        public static final int title_activity_index=0x7f060004;
+        public static final int title_activity_kccx=0x7f060006;
+        public static final int title_activity_ksgl=0x7f060009;
+        public static final int title_activity_login_=0x7f060001;
+        public static final int title_activity_pyfa_=0x7f060007;
     }
     public static final class style {
         /** 
@@ -163,10 +187,12 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f070001;
+        public static final int myActionBarStyle=0x7f070002;
+        public static final int myActionBarTextStyle=0x7f070003;
     }
 }

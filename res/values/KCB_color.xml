@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="classIndex" >#CCCCCC</color>  
+    <color name="courseTextColor" >#ECECEC</color>  
+    <color name="actionBarBg">#6666CC</color>  
+    <color name="actionBarText">#EDEDED</color> 
+</resources>
