@@ -31,5 +31,6 @@
     <string name="title_activity_pyfa_">培养方案</string>
     <string name="title_activity_grgl">个人管理</string>
     <string name="title_activity_ksgl">考试管理</string>
+    <string name="title_activity_kcb_">课程表</string>
 
 </resources>
