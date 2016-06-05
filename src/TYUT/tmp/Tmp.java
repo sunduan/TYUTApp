@@ -25,8 +25,8 @@ public class Tmp {
 	}
 
 	private static String cookies = "";
-	//private static String serverIp="192.168.200.154:8080/TyutAppService";
-	private static String serverIp = "tyutappservice-duan005003.mybluemix.net";
+	private static String serverIp="192.168.0.111:8080/TyutAppService";
+	//private static String serverIp = "tyutappservice-end.mybluemix.net";
 	
 	public static String getServerIp() {
 		return serverIp;

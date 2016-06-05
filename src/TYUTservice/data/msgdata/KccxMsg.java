@@ -1,74 +1,67 @@
 package TYUTservice.data.msgdata;
 
 public class KccxMsg {
-	private String cone;
-	private String ctwo;
-	private String cthree;
-	private String cfour;
-	private String cfive;
-	private String cweek;
-
-	public KccxMsg() {
-
+	private String Mon;
+	private String Tue;
+	private String Wed;
+	private String Thu;
+	private String Fri;
+	public String getMon() {
+		return Mon;
 	}
-
-	public String getCone() {
-		return cone;
+	public KccxMsg(){
+		
 	}
-
-	public void setCone(String cone) {
-		this.cone = cone;
-	}
-
-	public String getCtwo() {
-		return ctwo;
-	}
-
-	public void setCtwo(String ctwo) {
-		this.ctwo = ctwo;
-	}
-
-	public String getCthree() {
-		return cthree;
-	}
-
-	public void setCthree(String cthree) {
-		this.cthree = cthree;
-	}
-
-	public String getCfour() {
-		return cfour;
-	}
-
-	public void setCfour(String cfour) {
-		this.cfour = cfour;
-	}
-
-	public String getCfive() {
-		return cfive;
-	}
-
-	public void setCfive(String cfive) {
-		this.cfive = cfive;
-	}
-
-	public KccxMsg(String cone, String ctwo, String cthree, String cfour,
-			String cfive, String cweek) {
+	public KccxMsg(String mon, String tue, String wed, String thu, String fri,
+			String sat, String sun) {
 		super();
-		this.cone = cone;
-		this.ctwo = ctwo;
-		this.cthree = cthree;
-		this.cfour = cfour;
-		this.cfive = cfive;
-		this.cweek = cweek;
+		Mon = mon;
+		Tue = tue;
+		Wed = wed;
+		Thu = thu;
+		Fri = fri;
+		Sat = sat;
+		Sun = sun;
 	}
-
-	public String getCweek() {
-		return cweek;
+	public void setMon(String mon) {
+		Mon = mon;
 	}
-
-	public void setCweek(String cweek) {
-		this.cweek = cweek;
+	public String getTue() {
+		return Tue;
 	}
-
+	public void setTue(String tue) {
+		Tue = tue;
+	}
+	public String getWed() {
+		return Wed;
+	}
+	public void setWed(String wed) {
+		Wed = wed;
+	}
+	public String getThu() {
+		return Thu;
+	}
+	public void setThu(String thu) {
+		Thu = thu;
+	}
+	public String getFri() {
+		return Fri;
+	}
+	public void setFri(String fri) {
+		Fri = fri;
+	}
+	public String getSat() {
+		return Sat;
+	}
+	public void setSat(String sat) {
+		Sat = sat;
+	}
+	public String getSun() {
+		return Sun;
+	}
+	public void setSun(String sun) {
+		Sun = sun;
+	}
+	private String Sat;
+	private String Sun;
 }

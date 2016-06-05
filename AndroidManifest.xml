@@ -34,10 +34,10 @@
             android:name=".Facj_Activity"
             android:label="@string/facj_lablel" >
         </activity>
-        <activity
+        <!-- <activity
             android:name=".KccxActivity"
             android:label="@string/title_activity_kccx" >
-        </activity>
+        </activity> -->
         <activity
             android:name=".Pyfa_Activity"
             android:label="@string/title_activity_pyfa_" >

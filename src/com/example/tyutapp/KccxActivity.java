@@ -1,4 +1,4 @@
-package com.example.tyutapp;
+/*package com.example.tyutapp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -198,3 +198,4 @@ public class KccxActivity extends Activity {
 		setMainView();
 	}
 }
+*/

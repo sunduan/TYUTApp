@@ -73,12 +73,15 @@ public class Pyfa_Activity extends Activity {
 				Log.i("facj数据1", facjStatus + " ");
 				if(facjStatus.indexOf("响应吗50") != -1) {
 					LoginAgain again = new LoginAgain();
-					again.loginAgain();
-					facjStatus = connectTYUT.getByPost(
-							"http://" + Tmp.getServerIp() + "/pyfa", params);
+					again.loginAgain(Pyfa_Activity.this);
+					
 					while(Tmp.getCookies()==cookielock){
 						
 					}
+					params.remove(0);
+					params.add(new BasicNameValuePair("cookie", Tmp.getCookies()));
+					facjStatus = connectTYUT.getByPost(
+							"http://" + Tmp.getServerIp() + "/pyfa", params);
 				}
 				
 				Log.i("facj数据2", facjStatus + " ");

@@ -91,14 +91,22 @@ public class GrglActivity extends Activity {
 						"http://" + Tmp.getServerIp() + "/grxx", params);
 				String cookielock=Tmp.getCookies();
 				Log.i("facj数据1", grglStatus + " ");
-				if(grglStatus.indexOf("响应吗50") != -1) {
-					LoginAgain again = new LoginAgain();
-					again.loginAgain();
-					grglStatus = connectTYUT.getByPost(
-							"http://" + Tmp.getServerIp() + "/grxx", params);
-					while(Tmp.getCookies()==cookielock){
+				try {
+					if(grglStatus.indexOf("响应吗50") != -1||(new JSONObject(grglStatus).getInt("status"))==2) {
+						LoginAgain again = new LoginAgain();
+						again.loginAgain(GrglActivity.this);
 						
+						while(Tmp.getCookies()==cookielock){
+							
+						}
+						params.remove(0);
+						params.add(new BasicNameValuePair("cookie", Tmp.getCookies()));
+						grglStatus = connectTYUT.getByPost(
+								"http://" + Tmp.getServerIp() + "/grxx", params);
 					}
+				} catch (JSONException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
 				
 				Log.i("facj数据2", grglStatus + " ");

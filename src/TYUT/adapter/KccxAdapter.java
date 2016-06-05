@@ -1,4 +1,4 @@
-package TYUT.adapter;
+/*package TYUT.adapter;
 
 import java.util.List;
 
@@ -88,3 +88,4 @@ public class KccxAdapter extends BaseAdapter {
 	}
 
 }
+*/

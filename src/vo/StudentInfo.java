@@ -1,6 +1,7 @@
 package vo;
 
 public class StudentInfo {
+	private String status;
 	private String name;
 	private String userper;
 	private String tel;
@@ -10,13 +11,21 @@ public class StudentInfo {
 		
 	}
 	public StudentInfo(String name, String userper, String tel, String address,
-			String email) {
+			String email,String status) {
 		super();
 		this.name = name;
 		this.userper = userper;
 		this.tel = tel;
 		this.address = address;
 		this.email = email;
+		this.status=status;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	public String getName() {
 		return name;

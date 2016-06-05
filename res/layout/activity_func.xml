@@ -4,19 +4,56 @@
     android:layout_height="match_parent"
     android:background="@drawable/fanganchengji"
     tools:context="${relativePackage}.${activityClass}" >
-	<RelativeLayout 
+	<LinearLayout 
 	    android:id="@+id/main_background"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    
+	    android:orientation="vertical"
 	    >
+	    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:id="@+id/numberpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editpage"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#ad82dd"
+        android:text="查询" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
     <ListView
         android:id="@+id/main_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" >
 
     </ListView>
-</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
 </RelativeLayout>

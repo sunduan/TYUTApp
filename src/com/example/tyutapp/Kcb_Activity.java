@@ -1,6 +1,7 @@
 package com.example.tyutapp;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.http.message.BasicNameValuePair;
@@ -13,6 +14,7 @@ import TYUT.network.LoginAgain;
 import TYUT.tmp.Tmp;
 import TYUTservice.data.MessageFacj;
 import TYUTservice.data.msgdata.Course;
+import android.R.integer;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.Resources;
@@ -26,6 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Kcb_Activity extends Activity {
+	HashMap<String, Integer> co=new HashMap<String,Integer>();
 	List<Course>[] courses = new ArrayList[7];
 	LinearLayout weekPanels[] = new LinearLayout[7];
 	// List courseData[]=new ArrayList[7];
@@ -45,7 +48,7 @@ public class Kcb_Activity extends Activity {
 			}
 		}
 	};
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -72,7 +75,7 @@ public class Kcb_Activity extends Activity {
 		if (ll == null || data == null || data.size() < 1)
 			return;
 		int re[] = {1, 2, 3, 4, 5,6}; 
-		if (m == 1) {
+		/*if (m == 1) {
 			
 			re[0]=Color.rgb(0xad, 0x82, 0xdd);
 			re[1]=Color.rgb(0x66, 0xcc, 0x00);
@@ -94,7 +97,13 @@ public class Kcb_Activity extends Activity {
 			re[3]=Color.rgb(0x62, 0x92, 0xe4);
 			re[4]=Color.rgb(0xaa, 0xc5, 0xf0);
 			re[5]=Color.rgb(0xff, 0x87, 0x0f);
-		}
+		}*/
+		re[0]=Color.rgb(0xad, 0x82, 0xdd);
+		re[1]=Color.rgb(0x66, 0xcc, 0x00);
+		re[2]=Color.rgb(0xcc, 0x00, 0x00);
+		re[3]=Color.rgb(0x62, 0x92, 0xe4);
+		re[4]=Color.rgb(0xaa, 0xc5, 0xf0);
+		re[5]=Color.rgb(0xff, 0x87, 0x0f);
 		Log.i("Msg", "初始化面板");
 		Course pre = data.get(0);
 		for (int i = 0; i < data.size(); i++) {
@@ -111,13 +120,20 @@ public class Kcb_Activity extends Activity {
 				lp.setMargins(marLeft, (c.getStart() - 1)
 						* (itemHeight + marTop) + marTop, 0, 0);
 			}
+			if(co.isEmpty()){
+				co.put(c.getName(), re[0]);
+			}else{
+				if(co.get(c.getName())==null){
+					co.put(c.getName(), re[co.size()%6]);
+				}
+			}
 			tv.setLayoutParams(lp);
 			tv.setGravity(Gravity.TOP);
 			tv.setGravity(Gravity.CENTER_HORIZONTAL);
 			tv.setTextSize(12);
 			tv.setTextColor(getResources().getColor(R.color.courseTextColor));
 			tv.setText(c.getName() + "\n");
-			tv.setBackgroundColor(re[i]);
+			tv.setBackgroundColor(co.get(c.getName()));
 			//tv.setBackground(getResources().getDrawable(R.drawable.gerenguanli));
 			ll.addView(tv);
 			pre = c;
@@ -145,14 +161,22 @@ public class Kcb_Activity extends Activity {
 						"http://" + Tmp.getServerIp() + "/kccx", params);
 				String cookielock = Tmp.getCookies();
 				Log.i("facj数据1", facjStatus + " ");
-				if (facjStatus.indexOf("响应吗50") != -1) {
-					LoginAgain again = new LoginAgain();
-					again.loginAgain();
-					facjStatus = connectTYUT.getByPost(
-							"http://" + Tmp.getServerIp() + "/kccx", params);
-					while (Tmp.getCookies() == cookielock) {
+				try {
+					if (facjStatus.indexOf("响应吗50") != -1||(new JSONObject(facjStatus).getInt("status"))==2) {
+						LoginAgain again = new LoginAgain();
+						again.loginAgain(Kcb_Activity.this);
+						
+						while (Tmp.getCookies() == cookielock) {
 
+						}
+						params.remove(0);
+						params.add(new BasicNameValuePair("cookie", Tmp.getCookies()));
+						facjStatus = connectTYUT.getByPost(
+								"http://" + Tmp.getServerIp() + "/kccx", params);
 					}
+				} catch (JSONException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
 
 				Log.i("facj数据2", facjStatus + " ");

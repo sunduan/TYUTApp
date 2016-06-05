@@ -38,6 +38,7 @@ public class IndexActivity extends Activity {
 		        final String username = c.getString(c.getColumnIndex("username"));
 		        final String password = c.getString(c.getColumnIndex("password"));
 		    
+		        database.close();
 		        new Thread() {
 					public void run() {
 						// TODO Auto-generated method stub
