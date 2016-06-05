@@ -24,6 +24,7 @@ public class IndexActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_index);
+		Tmp.contexts.add(this);
 		// Êý¾Ý¿â
 		Dbconnetc dbconnetc = new Dbconnetc(this);
 		final SQLiteDatabase database = dbconnetc.getReadableDatabase();

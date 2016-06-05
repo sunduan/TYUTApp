@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_back2"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
@@ -10,7 +10,12 @@
     <!-- android:background="#F3D027" -->
     <!-- 青色 -->
     <!-- android:background="#21A957" -->
-
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	    android:background="@drawable/kechengchaxun"
+	    android:orientation="vertical"
+	    >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -47,7 +52,7 @@
                     android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/myqqtouxiang" />
+                    android:src="@drawable/touminglogo" />
             </RelativeLayout>
 
             <LinearLayout
@@ -247,5 +252,5 @@
         android:layout_height="0dp"
         android:layout_weight="0.5" >
     </RelativeLayout>
-
+</LinearLayout>
 </LinearLayout>

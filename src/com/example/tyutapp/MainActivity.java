@@ -1,5 +1,6 @@
 package com.example.tyutapp;
 
+import TYUT.tmp.Tmp;
 import TYUTservice.data.msgdata.KccxMsg;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,18 +15,33 @@ public class MainActivity extends Activity {
 	private Button kechengchaxun_func;
 	private Button gerenguanli_func;
 	private Button kaoshiguanli_func;
+	private Button xuejixinxi_func;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
+		Tmp.contexts.add(this);
 		// button
 		fanganchengji_func = (Button) findViewById(R.id.fanganchengji_func);
 		peiyangfangan_func=(Button) findViewById(R.id.peiyangfangan_func);
 		kechengchaxun_func=(Button)findViewById(R.id.kechengchaxun_func);
 		gerenguanli_func=(Button)findViewById(R.id.gerenguanli_func);
 		kaoshiguanli_func=(Button)findViewById(R.id.kaoshiguanli_func);
+		xuejixinxi_func=(Button)findViewById(R.id.xuejixinxi_func);
 		// listen
+		xuejixinxi_func.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,
+						XjxxActivity.class);
+				// Æô¶¯»î¶¯
+				startActivity(intent);
+			}
+
+		});
 		fanganchengji_func.setOnClickListener(new OnClickListener() {
 
 			@Override

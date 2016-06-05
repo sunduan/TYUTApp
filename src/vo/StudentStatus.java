@@ -13,13 +13,20 @@ public class StudentStatus {
 	private String xs;
 	private String zy;
 	private String nj;
+	private int status;
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
 	public StudentStatus(){
 		
 	}
 	public StudentStatus(String idstudent, String name, String idcard,
 			String sex, String mz, String jg, String csrq, String zz,
 			String rxrq, String xs, String zy, String nj, String bj,
-			String sfxj, String gjxj, String xq, String yd) {
+			String sfxj, String gjxj, String xq, String yd,int status) {
 		super();
 		this.idstudent = idstudent;
 		this.name = name;
@@ -38,6 +45,7 @@ public class StudentStatus {
 		this.gjxj = gjxj;
 		this.xq = xq;
 		this.yd = yd;
+		this.status=status;
 	}
 	private String bj;
 	private String sfxj;

@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
@@ -37,14 +38,15 @@ public class Pyfa_Activity extends Activity {
 			}
 		}
 	};
-	private RelativeLayout main_background;
+	private LinearLayout main_background;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_func);
 		main_listview=(ListView)findViewById(R.id.main_listview);
-		main_background=(RelativeLayout)findViewById(R.id.main_background);
+		main_background=(LinearLayout)findViewById(R.id.main_background);
 		
+		Tmp.contexts.add(this);
 		ActionBar bar = getActionBar();
 		main_background.setBackgroundColor(Color.rgb(0xaa, 0x22, 0x00));
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ee2200")));

@@ -97,6 +97,7 @@ public class Facj_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.bs_main);
 		
+		Tmp.contexts.add(this);
 		//ÆÁÄ»´óÐ¡
 		WindowManager wm=(WindowManager)this.getSystemService(Context.WINDOW_SERVICE);
 		outMetrics=new DisplayMetrics();
@@ -409,6 +410,8 @@ public class Facj_Activity extends Activity {
 				String zy=kcxq_zy.getText().toString();
 				setView3(R.layout.activity_func);
 				
+				LinearLayout l=(LinearLayout)findViewById(R.id.main_top);
+				l.setVisibility(View.VISIBLE);
 				nextpage=(Button)findViewById(R.id.nextpage);
 				numberpage=(TextView)findViewById(R.id.numberpage);
 				editpage=(EditText)findViewById(R.id.editpage);

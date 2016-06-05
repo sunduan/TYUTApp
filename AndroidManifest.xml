@@ -34,10 +34,12 @@
             android:name=".Facj_Activity"
             android:label="@string/facj_lablel" >
         </activity>
-        <!-- <activity
+        <!--
+        <activity
             android:name=".KccxActivity"
             android:label="@string/title_activity_kccx" >
-        </activity> -->
+        </activity>
+        -->
         <activity
             android:name=".Pyfa_Activity"
             android:label="@string/title_activity_pyfa_" >
@@ -53,6 +55,10 @@
         <activity
             android:name=".Kcb_Activity"
             android:label="@string/title_activity_kcb_" >
+        </activity>
+        <activity
+            android:name=".XjxxActivity"
+            android:label="@string/title_activity_xjxx" >
         </activity>
     </application>
 

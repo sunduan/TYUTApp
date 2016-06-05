@@ -54,6 +54,7 @@ public class Kcb_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_kcb);
 
+		Tmp.contexts.add(this);
 		itemHeight = getResources().getDimensionPixelSize(
 				R.dimen.weekItemHeight);
 		marTop = getResources().getDimensionPixelSize(R.dimen.weekItemMarTop);

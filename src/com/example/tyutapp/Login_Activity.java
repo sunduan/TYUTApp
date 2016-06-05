@@ -47,6 +47,7 @@ public class Login_Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login_);
 
+		Tmp.contexts.add(this);
 		// Êý¾Ý¿â
 		Dbconnetc dbconnetc = new Dbconnetc(this);
 		final SQLiteDatabase database = dbconnetc.getReadableDatabase();

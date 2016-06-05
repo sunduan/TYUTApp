@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import TYUT.tmp.Tmp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.Color;
@@ -21,6 +22,7 @@ public class FuncActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.bs_main);
 
+		Tmp.contexts.add(this);
 		// 修改标题栏颜色
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ad82dd")));

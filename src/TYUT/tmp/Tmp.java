@@ -1,17 +1,21 @@
 package TYUT.tmp;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Context;
 import TYUTservice.data.msgdata.FacjMsg;
 
 public class Tmp {
 	//public static List<FacjMsg> facjMsgs;
 	private static String username;
 	private static String password;
+	
+	public static List<Context> contexts=new ArrayList<Context>();
 	public static String getUsername() {
 		return username;
 	}
-
+	
 	public static void setUsername(String username) {
 		Tmp.username = username;
 	}
@@ -25,8 +29,8 @@ public class Tmp {
 	}
 
 	private static String cookies = "";
-	private static String serverIp="192.168.0.111:8080/TyutAppService";
-	//private static String serverIp = "tyutappservice-end.mybluemix.net";
+	//private static String serverIp="192.168.0.111:8080/TyutAppService";
+	private static String serverIp = "tyutappservice-end.mybluemix.net";
 	
 	public static String getServerIp() {
 		return serverIp;

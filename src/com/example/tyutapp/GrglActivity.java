@@ -48,6 +48,7 @@ public class GrglActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_grgl);
 		
+		Tmp.contexts.add(this);
 		name=(TextView)findViewById(R.id.grgl_name);
 		userper=(TextView)findViewById(R.id.grgl_userper);
 		tel=(TextView)findViewById(R.id.grgl_tel);
@@ -64,7 +65,11 @@ public class GrglActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				int l=Tmp.contexts.size();
+				for(int i=0;i<l;i++){
+					Activity activity=(Activity) Tmp.contexts.get(i);
+				activity.finish();
+				}
 			}
 		});
 	}
